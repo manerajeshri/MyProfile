@@ -4,12 +4,21 @@
     <title>Internal CSS</title>
     <style>
       /* h2 { } for all header */
+      /* id selector #IdName */
       #Objectives {
-        color: cadetblue;
+        color: rgb(84, 159, 161);
+        text-align:center;
       }
-      p {
+      /* p { 
+         color: blueviolet; 
+         font-size: x-large; 
+      }  */
+      .carieerObjective {
         color: blueviolet;
         font-size: x-large;
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
     </style>
   </head>
@@ -17,7 +26,7 @@
   <body>
     <h2 id="Objectives">Career Objectives</h2>
     <hr />
-    <p>
+    <p class="carieerObjective">
       <strong> Seeking </strong> a <b> challenging</b> and
       <u> rewarding career </u> in a reputed organization where my
       <mark> technical skills </mark> would make &nbsp; &nbsp; &nbsp; a positive
@@ -27,7 +36,7 @@
     </p>
 
     <hr />
-    <h2>Professional Summary</h2>
+    <h2 class="carieerObjective">Professional Summary</h2>
     <p>
       &nbsp; &nbsp; &nbsp; &nbsp; Experience in using Chrome Developer Tool for
       debugging and Troubleshooting the code <br />
