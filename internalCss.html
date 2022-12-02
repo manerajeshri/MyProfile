@@ -6,6 +6,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <style>
+      /* *star is a universal selector */
+      *{
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0px;
+        padding: 0px;
+
+      }
       /* h2 { } for all header */
       /* id selector #IdName */
       #Objectives {
@@ -23,10 +30,48 @@
         font-weight: bolder;
         font-family: 'Sofia', cursive;
       }
+      #roles{
+            margin-bottom: 50px;
+            border: 2px solid rebeccapurple;
+        }
+        #para{
+            margin-top: 100px;
+            border: 2px solid rebeccapurple;
+            width: 200px;
+            height: 100px;
+            border-radius: 20px;
+            padding-left: 10px;
+            background-color: blueviolet;
+            box-shadow: 50px 30px 20px palevioletrede;
+        }
+        body{
+          background-image:url(developerWomen.png);
+          background-size: cover;
+        }
+        table,th,td{
+          border: 2px solid rgb(19, 17, 17);
+          border-collapse: collapse;
+          
+        }
+        /* if we have multiple list then use id class name selector
+        then dont use comma */
+       ul li{
+padding: 5px;
+list-style:square;
+        }
+        #listbullet li{
+          padding: 5px;
+          list-style-type: circle;
+        }
+        h1{
+          text-shadow: 5px 4px 8px;
+        }
+
     </style>
   </head>
 
   <body>
+    <h1>Rajeshri Mane</h1>
     <h2 id="Objectives">Career Objectives</h2>
     <hr />
     <p class="carieerObjective">
@@ -48,5 +93,70 @@
       the program
     </p>
     <h3>This is heading 3</h3>
+    <h2 id="roles"> Roles and Responsibilities </h2>
+
+    <p id="para">
+         This is para 
+    </p>
+    <table>
+      <thead>
+        <th>Qualification</th>
+        <th>School/College</th>
+        <th>Board/University</th>
+        <th>year</th>
+        <th>Percentage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>M.Tech (Electronics)</td>
+          <td>R.I.T. Sakharale</td>
+          <td>
+            An Autonomous Institute Affiliated To Shivaji University, Kolhapur
+          </td>
+          <td>2013</td>
+          <td>8.24 CPI</td>
+        </tr>
+        <tr>
+          <td>BE (Electronics)</td>
+          <td>KBP Satara</td>
+          <td>Shivaji University Kolhapur</td>
+          <td>2010</td>
+          <td>75.13%</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>Y.C.I.S Satara.</td>
+          <td rowspan="2">
+            Maharashtra State Board of Secondary and Higher Secondary Education,
+            Pune
+          </td>
+          <td>2006</td>
+          <td>69.67%</td>
+        </tr>
+        <tr>
+          <td>SSC</td>
+          <td>New English School, Satara.</td>
+
+          <td>2004</td>
+          <td>74.13%</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>Reading</li>
+      <li>Programming</li>
+      <li>Cooking</li>
+      <li>Travelling</li>
+    </ul>
+    <ul id="listbullet">
+      <li>Reading</li>
+      <li>Programming</li>
+      <li>Cooking</li>
+      <li>Travelling</li>
+    </ul>
+<marquee>
+  <h1>hi hi hi hi</h1>
+</marquee>
+
   </body>
 </html>
