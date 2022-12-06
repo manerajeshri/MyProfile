@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Application Form</title>
+    <style>
+      label{
+        color: blue;
+      }
+      input[type="text"],input[type="number"]e{
+        color: brown;
+        border:1px solid red ;
+        border-radius: 10px;
+        width: 200px;
+        height: 25px;
+        text-transform: capitalize;
+      }
+      h2:hover{
+        color: blue;
+        background-color: aqua;
+      }
+                
+      input[type="submit"]:hover{
+        color: red;
+        border-radius: 10px;
+        background-color: aqua;
+        width: 80px;
+        height: 25px;
+      }
+      input[type="reset"]:hover{
+        color: red;
+        border-radius: 10px;
+        background-color: aqua;
+        width: 80px;
+        height: 25px;
+      }
+      button:hover{
+        color: red;
+      }
+      h2::after{content: " hi";     
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Employee Application Form</h3>
+    <h2>Roles and responsibility</h2>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td><label>Full Name: </label></td>
+            <td>
+              <input
+                type="text"
+                autofocus
+                required
+                placeholder="Max character length =40"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Email Address:</label></td>
+            <td>
+              <input type="text" required placeholder="Ex.abc@gmail.com" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Password </label></td>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <td><label>Contact Number: </label></td>
+            <td><input type="number" required /></td>
+          </tr>
+          <tr>
+            <td><label>Profile Photo: </label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><label>Multiple Photo: </label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+
+          <tr>
+            <td><label>Date of birth: </label></td>
+            <td><input type="date" required /></td>
+          </tr>
+          <tr>
+            <td><label>Gender: </label></td>
+            <td>
+              <input type="radio" name="Gender" /> <label>Male</label>
+              <input type="radio" name="Gender" /> <label>Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Marital Status: </label></td>
+            <td>
+              <input type="radio" name="Marital Status" /> <label>Yes</label>
+              <input type="radio" name="Marital Status" />
+              <label>No</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Known Tools & Technology: </label></td>
+            <td>
+              <input type="checkbox" /> <label>Angular</label>
+              <input type="checkbox" /> <label>React</label>
+              <input type="checkbox" /> <label>Python</label>
+              <input type="checkbox" /> <label>Java</label>
+              <input type="checkbox" /> <label>Jenkin</label>
+              <input type="checkbox" /> <label>GIT</label>
+              <input type="checkbox" /> <label>Database</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Profile: </label></td>
+            <td>
+              <select>
+                <option>UI Developer</option>
+                <option>Backend Developer</option>
+                <option>Full Stack Developer</option>
+                <option>DevOps Engineer</option>
+                <option>Tester</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label> Country: </label></td>
+            <td><input type="text" value="India" disabled /></td>
+          </tr>
+          <tr>
+            <td><label> Present Adress: </label></td>
+            <td><textarea rows="7" cols="40"> </textarea></td>
+          </tr>
+          <tr>
+            <td><input type="submit" /></td>
+            <td><input type="reset" /></td>
+           <td><button type="submit">sub</button></td> 
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
