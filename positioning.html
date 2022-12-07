@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Positioning Property</title>
-        <style>
-            #personal{
-                display: inline-block;
-                border: 1px solid red;
-                width: 150px;
-                height: 150px;
-                background-color: blue;
-            }
-            #Technical{
-                display: inline-block;
-                border: 1px solid rgb(130, 216, 18);
-                width: 150px;
-                height: 150px;
-                background-color: rgb(90, 184, 238);
-            }
-            #Project{
-                display: inline-block;
-                border: 1px solid rgb(229, 15, 236);
-                width: 150px;
-                height: 150px;
-                background-color: rgb(241, 129, 24);
-            }
-        </style>
-    </head>
-    <body>
-        <div id="personal">
-            This is block 1
-            Personal Detail
-        </div>
-<div id="Technical">
-    This is block 2
-    Technical Stack
-</div>
-<div id="Project">
-    This is block 3
-    Project Description
-</div>
-    </body>
+  <head>
+    <title>Position Property</title>
+    <style>
+        #personal{
+            display: inline-block;
+            border: 1px solid brown;
+            width: 150px;
+            height: 150px;
+            background-color: darkgrey;
+            /* position: static;
+            left:100px;
+            right: 300px;
+            top: 300px;
+            bottom: 300px; */
+            position: absolute;    
+            /* position: relative; */
+             z-index: 20; 
+        }
+        #technical{
+            display: inline-block;
+            border: 1px solid green;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(240, 135, 135); 
+             position: relative;    
+            /* position: absolute; */
+            left: 100px;
+            top: 100px;
+            z-index: -3;   
+        }
+        #project{
+            display: inline-block;
+            border: 1px solid cadetblue;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(128, 226, 154);
+            position: fixed;
+            bottom: 20px;
+            right:20px;
+            
+        }
+     
+    </style>
+  </head>
+  <body>
+    <div id="personal">
+        Personal details block
+    </div>
+
+    <div id="technical">
+        Technical Stack block
+    </div>
+
+    <div id="project">
+        Project Descr block
+    </div>
+ <p>a former competitive figure skater from Japan, participated in the Winter Olympic Games three times, winning two gold medals (in 2014 and 2018) and placing fourth in 2022. In 2014, he became the first Asian men's singles skater to win the Olympics. At 19 years old, he was also the youngest male skater to win the Olympic title since American Dick Button in 1948. In 2018, Hanyu became the first male single skater in 66 years to win two consecutive Olympic gold medals since Button in 1952.
+
+    In his first Olympic season (2013–14), Hanyu skated to "Parisienne Walkways" by Gary Moore as his short program and Romeo and Juliet by Nino Rota as the free skate. With the former, he scored four world records, two of them set at the 2013–14 Grand Prix Final and the 2014 Winter Olympics, becoming the first skater to score over 100 points in the short program. His win at the subsequent World Championships made him the first Asian and second skater across all disciplines to win the Olympics, Worlds, and the Grand Prix Final in the same season, after Russian Alexei Yagudin in 2001–02. In his second Olympic season (2017–18), Hanyu returned to his short program Ballade No. 1 by Frédéric Chopin and free skate Seimei by Shigeru Umebayashi, with which he had scored back-to-back world records in the 2015–16 Grand Prix series. In 2017, he improved his record in the short program at the Autumn Classic International and landed his first quadruple Lutz jump in the free skate at the Rostelecom Cup. In his third and last Olympic season (2021–22), Hanyu debuted his short program to a special piano arrangement of Introduction and Rondo Capriccioso by Shinya Kiyozuka [ja] and reused Heaven and Earth (天と地と) by Isao Tomita for the free skate from the previous season. The two programs earned him his sixth national title and two event record scores at the 2021–22 Japan Championships. At the subsequent Winter Olympics, he attempted the quadruple Axel jump for the first time in international competition, which received the base value of a quad Axel before being reduced for under-rotation, making it the closest attempt in competition up to then.[note 1] On July 19, 2022, Hanyu announced that he would "step away" from competitive figure skating and turn professional.
+    
+    For his achievements at the Winter Olympics, he was bestowed with the People's Honour Award by the prime minister of Japan as well as two Medals of Honor with Purple Ribbon. He was also selected as a recipient of the Kikuchi Kan Prize for his accomplishments in figure skating, including his back-to-back titles at the Winter Games. Two monuments honoring his Olympic wins were installed at the International Center Station in his hometown of Sendai. He was also listed in ESPN's World Fame 100 and The Dominant 20 along with Forbes' 30 Under 30 Asia for his successful Olympic season in 2018.[2][3][4]</p>
+  
+<p>a former competitive figure skater from Japan, participated in the Winter Olympic Games three times, winning two gold medals (in 2014 and 2018) and placing fourth in 2022. In 2014, he became the first Asian men's singles skater to win the Olympics. At 19 years old, he was also the youngest male skater to win the Olympic title since American Dick Button in 1948. In 2018, Hanyu became the first male single skater in 66 years to win two consecutive Olympic gold medals since Button in 1952.
+
+    In his first Olympic season (2013–14), Hanyu skated to "Parisienne Walkways" by Gary Moore as his short program and Romeo and Juliet by Nino Rota as the free skate. With the former, he scored four world records, two of them set at the 2013–14 Grand Prix Final and the 2014 Winter Olympics, becoming the first skater to score over 100 points in the short program. His win at the subsequent World Championships made him the first Asian and second skater across all disciplines to win the Olympics, Worlds, and the Grand Prix Final in the same season, after Russian Alexei Yagudin in 2001–02. In his second Olympic season (2017–18), Hanyu returned to his short program Ballade No. 1 by Frédéric Chopin and free skate Seimei by Shigeru Umebayashi, with which he had scored back-to-back world records in the 2015–16 Grand Prix series. In 2017, he improved his record in the short program at the Autumn Classic International and landed his first quadruple Lutz jump in the free skate at the Rostelecom Cup. In his third and last Olympic season (2021–22), Hanyu debuted his short program to a special piano arrangement of Introduction and Rondo Capriccioso by Shinya Kiyozuka [ja] and reused Heaven and Earth (天と地と) by Isao Tomita for the free skate from the previous season. The two programs earned him his sixth national title and two event record scores at the 2021–22 Japan Championships. At the subsequent Winter Olympics, he attempted the quadruple Axel jump for the first time in international competition, which received the base value of a quad Axel before being reduced for under-rotation, making it the closest attempt in competition up to then.[note 1] On July 19, 2022, Hanyu announced that he would "step away" from competitive figure skating and turn professional.
+    
+    For his achievements at the Winter Olympics, he was bestowed with the People's Honour Award by the prime minister of Japan as well as two Medals of Honor with Purple Ribbon. He was also selected as a recipient of the Kikuchi Kan Prize for his accomplishments in figure skating, including his back-to-back titles at the Winter Games. Two monuments honoring his Olympic wins were installed at the International Center Station in his hometown of Sendai. He was also listed in ESPN's World Fame 100 and The Dominant 20 along with Forbes' 30 Under 30 Asia for his successful Olympic season in 2018.[2][3][4]</p>
+<p>a former competitive figure skater from Japan, participated in the Winter Olympic Games three times, winning two gold medals (in 2014 and 2018) and placing fourth in 2022. In 2014, he became the first Asian men's singles skater to win the Olympics. At 19 years old, he was also the youngest male skater to win the Olympic title since American Dick Button in 1948. In 2018, Hanyu became the first male single skater in 66 years to win two consecutive Olympic gold medals since Button in 1952.
+
+    In his first Olympic season (2013–14), Hanyu skated to "Parisienne Walkways" by Gary Moore as his short program and Romeo and Juliet by Nino Rota as the free skate. With the former, he scored four world records, two of them set at the 2013–14 Grand Prix Final and the 2014 Winter Olympics, becoming the first skater to score over 100 points in the short program. His win at the subsequent World Championships made him the first Asian and second skater across all disciplines to win the Olympics, Worlds, and the Grand Prix Final in the same season, after Russian Alexei Yagudin in 2001–02. In his second Olympic season (2017–18), Hanyu returned to his short program Ballade No. 1 by Frédéric Chopin and free skate Seimei by Shigeru Umebayashi, with which he had scored back-to-back world records in the 2015–16 Grand Prix series. In 2017, he improved his record in the short program at the Autumn Classic International and landed his first quadruple Lutz jump in the free skate at the Rostelecom Cup. In his third and last Olympic season (2021–22), Hanyu debuted his short program to a special piano arrangement of Introduction and Rondo Capriccioso by Shinya Kiyozuka [ja] and reused Heaven and Earth (天と地と) by Isao Tomita for the free skate from the previous season. The two programs earned him his sixth national title and two event record scores at the 2021–22 Japan Championships. At the subsequent Winter Olympics, he attempted the quadruple Axel jump for the first time in international competition, which received the base value of a quad Axel before being reduced for under-rotation, making it the closest attempt in competition up to then.[note 1] On July 19, 2022, Hanyu announced that he would "step away" from competitive figure skating and turn professional.
+    
+    For his achievements at the Winter Olympics, he was bestowed with the People's Honour Award by the prime minister of Japan as well as two Medals of Honor with Purple Ribbon. He was also selected as a recipient of the Kikuchi Kan Prize for his accomplishments in figure skating, including his back-to-back titles at the Winter Games. Two monuments honoring his Olympic wins were installed at the International Center Station in his hometown of Sendai. He was also listed in ESPN's World Fame 100 and The Dominant 20 along with Forbes' 30 Under 30 Asia for his successful Olympic season in 2018.[2][3][4]</p>
+</body>
 </html>
