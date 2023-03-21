@@ -24,19 +24,20 @@
                 display: block;
                 width: 80px;
             }
-            #click {
+     #click {
         border: 2px solid brown;
+        /* display: none; Hide content NO Space reserved  */
         display: none;
-        
       }
       #goTo{
-      
         border: 2px solid brown;
+        /* visibility: hidden; Hide content reserve space */
         visibility: hidden;
+        /* display: none; Hide content NO Space reserved  */
+        /* display: none; */
       }
       #here {
         border: 2px solid brown;
-        
       }
         </style>
     </head>
@@ -50,10 +51,15 @@
     <p id="para2">This is paragraph 2</p>
     <h3>Heading 3</h3>
     <h3>Heading 3</h3>
+    <hr>
+    <span>display: none; Hide content NO Space reserved </span>
     <a href="#" id="click"> Click Me </a>
+    <hr>
+    <span>visibility: hidden; Hide content reserve space</span>
     <a href="#" id="goTo"> Go To </a> 
+    <hr>
     <a href="#" id="here"> Here you go </a>
-
+    <hr>
         <footer>
             <span>Follow Me</span>
             <ul>
